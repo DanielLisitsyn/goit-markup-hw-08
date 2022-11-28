@@ -1,0 +1,114 @@
+.benefits__element {
+    margin-left: auto;
+    margin-right: auto;
+
+    // mobile
+    @media screen and (min-width: 450px) {
+        width: 450px;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    // tablet
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+            margin-bottom: 0px;
+        }
+    }
+
+    // desktop
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
+
+
+.benefits__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14) ;
+
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: wrap;
+    }
+}
+
+.benefits__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    color: var(--title-text-color);
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    text-align: center;
+
+
+    // desktop
+    @media screen and (min-width: 1200px) {
+         text-align: left;
+        }
+}
+
+.benefits__item {
+    display: flex;
+    flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 120px;
+        background-color: var(--primary-background-color);
+        border-radius: 4px;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 450px) {
+            width: 450px;
+            }
+
+            // tablet
+        @media screen and (min-width: 768px) {
+             width: 354px;
+             display: flex;
+
+        }
+
+        // desktop
+        @media screen and (min-width: 1200px) {
+            display: flex;
+                width: 270px;
+        }
+}
+
+
+.benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    
+    //tablet
+    @media screen and (min-width: 768px){
+        gap: 30px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+        // desktop
+        @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+            padding-bottom: 94px;
+        }
+
+                                
+}
+
+
+

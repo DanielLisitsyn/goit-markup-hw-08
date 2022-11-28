@@ -1,0 +1,48 @@
+.examples {
+  padding-bottom: 94px;
+  @media screen and (max-width: 1199.5px) {
+    display: none;
+  }
+}
+
+.examples__title {
+  margin-bottom: 50px;
+  text-align: center;
+
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.examples__work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.examples__element:not(:first-child) {
+  margin-left: 30px;
+}
+
+.examples__burnt {
+  position: relative;
+}
+
+.examples__overlay {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 27px 107px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 24%px;
+  background-color: rgba(47, 48, 58, 0.8);
+}

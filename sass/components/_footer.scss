@@ -1,0 +1,244 @@
+.footer {
+  background-color: var(--section-background-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer-display {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+  }
+}
+
+.logo {
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: var(--accent-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.deckor--white {
+  color: var(--primary-white-color);
+}
+
+.footer-addres {
+  text-align: center;
+}
+
+.footer-addres-link {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.footer-auth {
+  padding-left: 0;
+}
+
+.footer-auth-nav {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  transition: color var(--turns-fast);
+}
+
+.footer-auth-nav:hover,
+.footer-auth-nav:focus {
+  color: var(--accent-color);
+}
+
+.footer-mail {
+  margin-bottom: 8px;
+}
+
+.footer-auth {
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.address-wraper {
+  margin-bottom: 60px;
+  //   margin-right: 70px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.join {
+  margin-bottom: 60px;
+}
+
+.join-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.join .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.join-socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #43444d;
+  fill: var(--primary-white-color);
+
+  transition: background-color var(--turns-fast);
+}
+
+.join-socials-icon {
+  fill: var(--primary-white-color);
+
+  transition: fill var(--turns-fast);
+}
+
+.join-socials-link:hover,
+.join-socials-link:focus {
+  background-color: var(--accent-color);
+}
+
+.join-socials-link:hover .join-socials-icon,
+.join-socials-link:focus .join-socials-icon {
+  fill: var(--accent-color);
+}
+
+.footer-display {
+  //   display: flex;
+  align-items: baseline;
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  //   margin-left: 93px;
+}
+
+.follow-form {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.mail-input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  //   margin-right: 12px;
+  margin-bottom: 60px;
+  padding: 15px 16px;
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.follow-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  //   display: flex;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.following-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-white-color);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.follow-icon {
+  margin-left: 10px;
+}
